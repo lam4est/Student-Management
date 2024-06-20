@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Danh sách sinh viên</h2>
+
+        <div class="content">
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th id="sortByName">Tên</th>
+                        <th id="sortByAge">Tuổi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <div class="controls">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm tên...">
+                <button id="searchButton">Tìm kiếm</button>               
+                
+                <input type="number" id="ageInput" placeholder="Nhập tuổi...">
+                <button id="hideButton">Ẩn tuổi</button>                
+                
+                <button id="resetButton">Hiển thị lại</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

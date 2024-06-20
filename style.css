@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1d1b18;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: #4a372c;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    text-align: center;
+    min-width: 650px; 
+}
+
+h2 {
+    color: #fff;
+    grid-column: span 2; 
+    margin-bottom: 5%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-right: 20px;
+}
+
+table, th, td {
+    border: 1px solid #82b892;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    color: white; 
+}
+
+th {
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: #333; 
+}
+
+th:hover {
+    background-color: #555; 
+}
+
+th:active {
+    background-color: #777; 
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+}
+
+button {
+    background-color: #82b892;
+    color: white;
+    margin: 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 100px; 
+}
+
+button:hover {
+    background-color: #6ea17b;
+}
+
+button:active {
+    background-color: #567960;
+}
+
+#searchButton, #hideButton{
+    margin-bottom: 30%;
+}
+
+#resetButton {
+    width: 130px;
+}
+
+.highlight {
+    background-color: red;
+}
